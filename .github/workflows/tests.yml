@@ -10,6 +10,8 @@ on:
       - "docs/**"
       - "*.md"
 
+permissions: read-all
+
 jobs:
   tests:
     name: ${{ matrix.session }} ${{ matrix.python }} / ${{ matrix.os }}
@@ -22,6 +24,7 @@ jobs:
         session: ["mypy", "tests"]
         include:
           - { python: "3.12", os: "ubuntu-latest", session: "pre-commit" }
+          - { python: "3.12", os: "ubuntu-latest", session: "checkov" }
           - { python: "3.12", os: "ubuntu-latest", session: "typeguard" }
 
     env:

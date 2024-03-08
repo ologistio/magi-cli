@@ -28,6 +28,7 @@ nox.needs_version = ">= 2024.3.2"
 nox.options.sessions = (
     "pre-commit",
     "mypy",
+    "checkov",
     "tests",
     "typeguard",
 )
@@ -132,6 +133,13 @@ def precommit(session: Session) -> None:
     session.run("pre-commit", *args)
     if args and args[0] == "install":
         activate_virtualenv_in_precommit_hooks(session)
+
+
+@session(python=python_versions[1])
+def checkov(session: Session) -> None:
+    """Scan dependencies for insecure packages."""
+    session.install("checkov")
+    session.run("checkov", "--directory", ".")
 
 
 @session(python=python_versions)
