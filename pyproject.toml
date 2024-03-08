@@ -19,7 +19,6 @@ python = "^3.9"
 click = "==8.1.7"
 
 [tool.poetry.dev-dependencies]
-Pygments = "==2.10.0"
 bandit = "==1.7.8"
 black = "==24.2.0"
 coverage = {extras = ["toml"], version = "==7.4.3"}
