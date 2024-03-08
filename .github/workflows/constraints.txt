@@ -1,0 +1,5 @@
+pip
+nox
+nox-poetry
+poetry
+virtualenv
