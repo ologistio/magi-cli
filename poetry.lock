@@ -1,80 +1,4 @@
 [[package]]
-name = "aiodns"
-version = "3.1.1"
-description = "Simple DNS resolver for asyncio"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-pycares = ">=4.0.0"
-
-[[package]]
-name = "aiohttp"
-version = "3.9.3"
-description = "Async http client/server framework (asyncio)"
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.dependencies]
-aiosignal = ">=1.1.2"
-async-timeout = {version = ">=4.0,<5.0", markers = "python_version < \"3.11\""}
-attrs = ">=17.3.0"
-frozenlist = ">=1.1.1"
-multidict = ">=4.5,<7.0"
-yarl = ">=1.0,<2.0"
-
-[package.extras]
-speedups = ["brotlicffi", "brotli", "aiodns"]
-
-[[package]]
-name = "aiomultiprocess"
-version = "0.9.0"
-description = "AsyncIO version of the standard multiprocessing module"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[[package]]
-name = "aiosignal"
-version = "1.3.1"
-description = "aiosignal: a list of registered asynchronous callbacks"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.dependencies]
-frozenlist = ">=1.1.0"
-
-[[package]]
-name = "annotated-types"
-version = "0.6.0"
-description = "Reusable constraint types to use with typing.Annotated"
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[[package]]
-name = "argcomplete"
-version = "3.2.3"
-description = "Bash tab completion for argparse"
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.extras]
-test = ["coverage", "pexpect", "wheel", "ruff", "mypy"]
-
-[[package]]
-name = "async-timeout"
-version = "4.0.3"
-description = "Timeout context manager for asyncio programs"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[[package]]
 name = "attrs"
 version = "23.2.0"
 description = "Classes Without Boilerplate"
@@ -112,79 +36,6 @@ toml = ["tomli (>=1.1.0)"]
 yaml = ["pyyaml"]
 
 [[package]]
-name = "bc-detect-secrets"
-version = "1.5.4"
-description = "Tool for detecting secrets in the codebase"
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.dependencies]
-pyyaml = "*"
-requests = "*"
-unidiff = "*"
-
-[package.extras]
-gibberish = ["gibberish-detector"]
-word_list = ["pyahocorasick"]
-
-[[package]]
-name = "bc-jsonpath-ng"
-version = "1.6.1"
-description = "A final implementation of JSONPath for Python that aims to be standard compliant, including arithmetic and binary comparison operators and providing clear AST for metaprogramming."
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.dependencies]
-decorator = "*"
-ply = "*"
-
-[[package]]
-name = "bc-python-hcl2"
-version = "0.4.2"
-description = "A parser for HCL2"
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.dependencies]
-lark = ">=1.0.0"
-
-[[package]]
-name = "beartype"
-version = "0.17.2"
-description = "Unbearably fast runtime type checking in pure Python."
-category = "dev"
-optional = false
-python-versions = ">=3.8.0"
-
-[package.extras]
-all = ["typing-extensions (>=3.10.0.0)"]
-dev = ["coverage (>=5.5)", "equinox", "pandera", "typing-extensions (>=3.10.0.0)", "pytest (>=4.0.0)", "tox (>=3.20.1)", "sphinx (>=4.2.0,<6.0.0)", "pydata-sphinx-theme (<=0.7.2)", "autoapi (>=0.9.0)", "sphinxext-opengraph (>=0.7.5)", "mypy (>=0.800)", "sphinx", "numpy"]
-doc-rtd = ["sphinx (>=4.2.0,<6.0.0)", "pydata-sphinx-theme (<=0.7.2)", "autoapi (>=0.9.0)", "sphinxext-opengraph (>=0.7.5)"]
-test-tox = ["equinox", "pandera", "typing-extensions (>=3.10.0.0)", "pytest (>=4.0.0)", "mypy (>=0.800)", "sphinx", "numpy"]
-test-tox-coverage = ["coverage (>=5.5)"]
-
-[[package]]
-name = "beautifulsoup4"
-version = "4.12.3"
-description = "Screen-scraping library"
-category = "dev"
-optional = false
-python-versions = ">=3.6.0"
-
-[package.dependencies]
-soupsieve = ">1.2"
-
-[package.extras]
-cchardet = ["cchardet"]
-chardet = ["chardet"]
-charset-normalizer = ["charset-normalizer"]
-html5lib = ["html5lib"]
-lxml = ["lxml"]
-
-[[package]]
 name = "black"
 version = "24.2.0"
 description = "The uncompromising code formatter."
@@ -208,154 +59,12 @@ jupyter = ["ipython (>=7.8.0)", "tokenize-rt (>=3.2.0)"]
 uvloop = ["uvloop (>=0.15.2)"]
 
 [[package]]
-name = "boolean.py"
-version = "4.0"
-description = "Define boolean algebras, create and parse boolean expressions and create custom boolean DSL."
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "boto3"
-version = "1.34.25"
-description = "The AWS SDK for Python"
-category = "dev"
-optional = false
-python-versions = ">= 3.8"
-
-[package.dependencies]
-botocore = ">=1.34.25,<1.35.0"
-jmespath = ">=0.7.1,<2.0.0"
-s3transfer = ">=0.10.0,<0.11.0"
-
-[package.extras]
-crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
-
-[[package]]
-name = "botocore"
-version = "1.34.25"
-description = "Low-level, data-driven core of boto 3."
-category = "dev"
-optional = false
-python-versions = ">= 3.8"
-
-[package.dependencies]
-jmespath = ">=0.7.1,<2.0.0"
-python-dateutil = ">=2.1,<3.0.0"
-urllib3 = [
-    {version = ">=1.25.4,<1.27", markers = "python_version < \"3.10\""},
-    {version = ">=1.25.4,<2.1", markers = "python_version >= \"3.10\""},
-]
-
-[package.extras]
-crt = ["awscrt (==0.19.19)"]
-
-[[package]]
-name = "cached-property"
-version = "1.5.2"
-description = "A decorator for caching properties in classes."
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "cachetools"
-version = "5.3.3"
-description = "Extensible memoizing collections and decorators"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[[package]]
-name = "certifi"
-version = "2024.2.2"
-description = "Python package for providing Mozilla's CA Bundle."
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[[package]]
-name = "cffi"
-version = "1.16.0"
-description = "Foreign Function Interface for Python calling C code."
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.dependencies]
-pycparser = "*"
-
-[[package]]
 name = "cfgv"
 version = "3.4.0"
 description = "Validate configuration and produce human readable error messages."
 category = "dev"
 optional = false
 python-versions = ">=3.8"
-
-[[package]]
-name = "charset-normalizer"
-version = "3.3.2"
-description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
-category = "dev"
-optional = false
-python-versions = ">=3.7.0"
-
-[[package]]
-name = "checkov"
-version = "3.2.33"
-description = "Infrastructure as code static analysis"
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.dependencies]
-aiodns = ">=3.0.0,<4.0.0"
-aiohttp = ">=3.8.0,<4.0.0"
-aiomultiprocess = ">=0.9.0,<0.10.0"
-argcomplete = ">=3.0.0,<4.0.0"
-bc-detect-secrets = "1.5.4"
-bc-jsonpath-ng = "1.6.1"
-bc-python-hcl2 = "0.4.2"
-boto3 = "1.34.25"
-botocore = "1.34.25"
-cachetools = ">=5.2.0,<6.0.0"
-charset-normalizer = ">=3.1.0,<4.0.0"
-click = ">=8.1.0,<9.0.0"
-cloudsplaining = ">=0.6.2,<0.7.0"
-colorama = ">=0.4.3,<0.5.0"
-configargparse = ">=1.5.3,<2.0.0"
-cyclonedx-python-lib = ">=6.0.0,<7.0.0"
-docker = ">=6.0.1,<8.0.0"
-dockerfile-parse = ">=2.0.0,<3.0.0"
-dpath = "2.1.3"
-gitpython = ">=3.1.30,<4.0.0"
-importlib-metadata = ">=6.0.0,<8.0.0"
-jmespath = ">=1.0.0,<2.0.0"
-jsonschema = ">=4.17.0,<5.0.0"
-junit-xml = ">=1.9,<2.0"
-license-expression = ">=30.1.0,<31.0.0"
-networkx = "<2.7"
-openai = "<1.0.0"
-packageurl-python = ">=0.11.1,<0.14.0"
-packaging = ">=23.0,<24.0"
-prettytable = ">=3.6.0,<4.0.0"
-pycep-parser = "0.4.1"
-pydantic = ">=2.0.0,<3.0.0"
-pyston = {version = "2.3.5", markers = "python_version < \"3.11\" and (sys_platform == \"linux\" or sys_platform == \"darwin\") and platform_machine == \"x86_64\" and implementation_name == \"cpython\""}
-pyston-autoload = {version = "2.3.5", markers = "python_version < \"3.11\" and (sys_platform == \"linux\" or sys_platform == \"darwin\") and platform_machine == \"x86_64\" and implementation_name == \"cpython\""}
-pyyaml = ">=6.0.0,<7.0.0"
-requests = ">=2.28.0,<3.0.0"
-rustworkx = ">=0.13.0,<0.14.0"
-spdx-tools = ">=0.8.0,<0.9.0"
-tabulate = ">=0.9.0,<0.10.0"
-termcolor = ">=1.1.0,<2.4.0"
-tqdm = ">=4.65.0,<5.0.0"
-typing-extensions = ">=4.5.0,<5.0.0"
-yarl = ">=1.9.1,<2.0.0"
-
-[package.extras]
-dev = ["pytest (==5.3.1)", "coverage (==5.5)", "coverage-badge", "GitPython (==3.1.41)", "bandit", "jsonschema"]
 
 [[package]]
 name = "click"
@@ -369,68 +78,12 @@ python-versions = ">=3.7"
 colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
 [[package]]
-name = "click-option-group"
-version = "0.5.6"
-description = "Option groups missing in Click"
-category = "dev"
-optional = false
-python-versions = ">=3.6,<4"
-
-[package.dependencies]
-Click = ">=7.0,<9"
-
-[package.extras]
-docs = ["sphinx", "pallets-sphinx-themes", "m2r2"]
-tests = ["pytest"]
-tests_cov = ["pytest", "pytest-cov", "coverage", "coveralls"]
-
-[[package]]
-name = "cloudsplaining"
-version = "0.6.2"
-description = "AWS IAM Security Assessment tool that identifies violations of least privilege and generates a risk-prioritized HTML report."
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-boto3 = "*"
-botocore = "*"
-cached-property = "*"
-click = "*"
-click-option-group = "*"
-jinja2 = "*"
-markdown = "*"
-policy-sentry = ">=0.11.3"
-pyyaml = "*"
-schema = "*"
-
-[[package]]
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
 category = "main"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
-
-[[package]]
-name = "configargparse"
-version = "1.7"
-description = "A drop-in replacement for argparse that allows options to also be set via config files and/or environment variables."
-category = "dev"
-optional = false
-python-versions = ">=3.5"
-
-[package.extras]
-test = ["mock", "pyyaml", "pytest"]
-yaml = ["pyyaml"]
-
-[[package]]
-name = "contextlib2"
-version = "21.6.0"
-description = "Backports and enhancements for the contextlib module"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
 
 [[package]]
 name = "coverage"
@@ -447,25 +100,6 @@ tomli = {version = "*", optional = true, markers = "python_full_version <= \"3.1
 toml = ["tomli"]
 
 [[package]]
-name = "cyclonedx-python-lib"
-version = "6.4.3"
-description = "Python library for CycloneDX"
-category = "dev"
-optional = false
-python-versions = ">=3.8,<4.0"
-
-[package.dependencies]
-license-expression = ">=30,<31"
-packageurl-python = ">=0.11,<2"
-py-serializable = ">=0.16,<2"
-sortedcontainers = ">=2.4.0,<3.0.0"
-
-[package.extras]
-validation = ["jsonschema[format] (>=4.18,<5.0)", "lxml (>=4,<6)"]
-json-validation = ["jsonschema[format] (>=4.18,<5.0)"]
-xml-validation = ["lxml (>=4,<6)"]
-
-[[package]]
 name = "darglint"
 version = "1.8.1"
 description = "A utility for ensuring Google-style docstrings stay up to date with the source code."
@@ -474,62 +108,12 @@ optional = false
 python-versions = ">=3.6,<4.0"
 
 [[package]]
-name = "decorator"
-version = "5.1.1"
-description = "Decorators for Humans"
-category = "dev"
-optional = false
-python-versions = ">=3.5"
-
-[[package]]
-name = "defusedxml"
-version = "0.7.1"
-description = "XML bomb protection for Python stdlib modules"
-category = "dev"
-optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-
-[[package]]
 name = "distlib"
 version = "0.3.8"
 description = "Distribution utilities"
 category = "dev"
 optional = false
 python-versions = "*"
-
-[[package]]
-name = "docker"
-version = "7.0.0"
-description = "A Python library for the Docker Engine API."
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.dependencies]
-packaging = ">=14.0"
-pywin32 = {version = ">=304", markers = "sys_platform == \"win32\""}
-requests = ">=2.26.0"
-urllib3 = ">=1.26.0"
-
-[package.extras]
-ssh = ["paramiko (>=2.4.3)"]
-websockets = ["websocket-client (>=1.3.0)"]
-
-[[package]]
-name = "dockerfile-parse"
-version = "2.0.1"
-description = "Python library for Dockerfile manipulation"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[[package]]
-name = "dpath"
-version = "2.1.3"
-description = "Filesystem-like pathing and searching for dictionaries"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
 
 [[package]]
 name = "exceptiongroup"
@@ -596,39 +180,6 @@ flake8 = ">=3"
 pydocstyle = ">=2.1"
 
 [[package]]
-name = "frozenlist"
-version = "1.4.1"
-description = "A list-like structure which implements collections.abc.MutableSequence"
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[[package]]
-name = "gitdb"
-version = "4.0.11"
-description = "Git Object Database"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.dependencies]
-smmap = ">=3.0.1,<6"
-
-[[package]]
-name = "gitpython"
-version = "3.1.42"
-description = "GitPython is a Python library used to interact with Git repositories"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.dependencies]
-gitdb = ">=4.0.1,<5"
-
-[package.extras]
-test = ["black", "coverage", "ddt (>=1.1.1,!=1.4.3)", "mypy", "pre-commit", "pytest (>=7.3.1)", "pytest-cov", "pytest-instafail", "pytest-mock", "pytest-sugar", "mock"]
-
-[[package]]
 name = "identify"
 version = "2.5.35"
 description = "File identification library for Python"
@@ -638,14 +189,6 @@ python-versions = ">=3.8"
 
 [package.extras]
 license = ["ukkonen"]
-
-[[package]]
-name = "idna"
-version = "3.6"
-description = "Internationalized Domain Names in Applications (IDNA)"
-category = "dev"
-optional = false
-python-versions = ">=3.5"
 
 [[package]]
 name = "importlib-metadata"
@@ -672,17 +215,6 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
-name = "isodate"
-version = "0.6.1"
-description = "An ISO 8601 date/time/duration parser and formatter"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-six = "*"
-
-[[package]]
 name = "isort"
 version = "5.13.2"
 description = "A Python utility / library to sort Python imports."
@@ -692,112 +224,6 @@ python-versions = ">=3.8.0"
 
 [package.extras]
 colors = ["colorama (>=0.4.6)"]
-
-[[package]]
-name = "jinja2"
-version = "3.1.3"
-description = "A very fast and expressive template engine."
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.dependencies]
-MarkupSafe = ">=2.0"
-
-[package.extras]
-i18n = ["Babel (>=2.7)"]
-
-[[package]]
-name = "jmespath"
-version = "1.0.1"
-description = "JSON Matching Expressions"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[[package]]
-name = "jsonschema"
-version = "4.21.1"
-description = "An implementation of JSON Schema validation for Python"
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.dependencies]
-attrs = ">=22.2.0"
-jsonschema-specifications = ">=2023.03.6"
-referencing = ">=0.28.4"
-rpds-py = ">=0.7.1"
-
-[package.extras]
-format = ["fqdn", "idna", "isoduration", "jsonpointer (>1.13)", "rfc3339-validator", "rfc3987", "uri-template", "webcolors (>=1.11)"]
-format-nongpl = ["fqdn", "idna", "isoduration", "jsonpointer (>1.13)", "rfc3339-validator", "rfc3986-validator (>0.1.0)", "uri-template", "webcolors (>=1.11)"]
-
-[[package]]
-name = "jsonschema-specifications"
-version = "2023.12.1"
-description = "The JSON Schema meta-schemas and vocabularies, exposed as a Registry"
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.dependencies]
-referencing = ">=0.31.0"
-
-[[package]]
-name = "junit-xml"
-version = "1.9"
-description = "Creates JUnit XML test result documents that can be read by tools such as Jenkins"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-six = "*"
-
-[[package]]
-name = "lark"
-version = "1.1.9"
-description = "a modern parsing library"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.extras]
-atomic_cache = ["atomicwrites"]
-interegular = ["interegular (>=0.3.1,<0.4.0)"]
-nearley = ["js2py"]
-regex = ["regex"]
-
-[[package]]
-name = "license-expression"
-version = "30.2.0"
-description = "license-expression is a comprehensive utility library to parse, compare, simplify and normalize license expressions (such as SPDX license expressions) using boolean logic."
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.dependencies]
-"boolean.py" = ">=4.0"
-
-[package.extras]
-docs = ["Sphinx (>=5.0.2)", "sphinx-rtd-theme (>=1.0.0)", "sphinxcontrib-apidoc (>=0.4.0)", "sphinx-reredirects (>=0.1.2)", "doc8 (>=0.11.2)", "sphinx-autobuild", "sphinx-rtd-dark-mode (>=1.3.0)", "sphinx-copybutton"]
-testing = ["pytest (>=6,!=7.0.0)", "pytest-xdist (>=2)", "twine", "black", "isort"]
-
-[[package]]
-name = "markdown"
-version = "3.5.2"
-description = "Python implementation of John Gruber's Markdown."
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.dependencies]
-importlib-metadata = {version = ">=4.4", markers = "python_version < \"3.10\""}
-
-[package.extras]
-docs = ["mkdocs (>=1.5)", "mkdocs-nature (>=0.6)", "mdx-gh-links (>=0.2)", "mkdocstrings", "mkdocs-gen-files", "mkdocs-section-index", "mkdocs-literate-nav"]
-testing = ["coverage", "pyyaml"]
 
 [[package]]
 name = "markdown-it-py"
@@ -821,14 +247,6 @@ rtd = ["mdit-py-plugins", "myst-parser", "pyyaml", "sphinx", "sphinx-copybutton"
 testing = ["coverage", "pytest", "pytest-cov", "pytest-regressions"]
 
 [[package]]
-name = "markupsafe"
-version = "2.1.5"
-description = "Safely add untrusted strings to HTML/XML markup."
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[[package]]
 name = "mccabe"
 version = "0.7.0"
 description = "McCabe checker, plugin for flake8"
@@ -840,14 +258,6 @@ python-versions = ">=3.6"
 name = "mdurl"
 version = "0.1.2"
 description = "Markdown URL utilities"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[[package]]
-name = "multidict"
-version = "6.0.5"
-description = "multidict implementation"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
@@ -880,68 +290,12 @@ optional = false
 python-versions = ">=3.5"
 
 [[package]]
-name = "networkx"
-version = "2.6.3"
-description = "Python package for creating and manipulating graphs and networks"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.extras]
-default = ["numpy (>=1.19)", "scipy (>=1.5,!=1.6.1)", "matplotlib (>=3.3)", "pandas (>=1.1)"]
-developer = ["black (==21.5b1)", "pre-commit (>=2.12)"]
-doc = ["sphinx (>=4.0,<5.0)", "pydata-sphinx-theme (>=0.6,<1.0)", "sphinx-gallery (>=0.9,<1.0)", "numpydoc (>=1.1)", "pillow (>=8.2)", "nb2plots (>=0.6)", "texext (>=0.6.6)"]
-extra = ["lxml (>=4.5)", "pygraphviz (>=1.7)", "pydot (>=1.4.1)"]
-test = ["pytest (>=6.2)", "pytest-cov (>=2.12)", "codecov (>=2.1)"]
-
-[[package]]
 name = "nodeenv"
 version = "1.8.0"
 description = "Node.js virtual environment builder"
 category = "dev"
 optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*"
-
-[[package]]
-name = "numpy"
-version = "1.26.4"
-description = "Fundamental package for array computing in Python"
-category = "dev"
-optional = false
-python-versions = ">=3.9"
-
-[[package]]
-name = "openai"
-version = "0.28.1"
-description = "Python client library for the OpenAI API"
-category = "dev"
-optional = false
-python-versions = ">=3.7.1"
-
-[package.dependencies]
-aiohttp = "*"
-requests = ">=2.20"
-tqdm = "*"
-
-[package.extras]
-datalib = ["numpy", "pandas (>=1.2.3)", "pandas-stubs (>=1.1.0.11)", "openpyxl (>=3.0.7)"]
-dev = ["black (>=21.6b0,<22.0.0)", "pytest (>=6.0.0,<7.0.0)", "pytest-asyncio", "pytest-mock"]
-embeddings = ["scikit-learn (>=1.0.2)", "tenacity (>=8.0.1)", "matplotlib", "plotly", "numpy", "scipy", "pandas (>=1.2.3)", "pandas-stubs (>=1.1.0.11)", "openpyxl (>=3.0.7)"]
-wandb = ["wandb", "numpy", "pandas (>=1.2.3)", "pandas-stubs (>=1.1.0.11)", "openpyxl (>=3.0.7)"]
-
-[[package]]
-name = "packageurl-python"
-version = "0.13.4"
-description = "A purl aka. Package URL parser and builder"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.extras]
-build = ["setuptools", "wheel"]
-lint = ["isort", "black", "mypy"]
-sqlalchemy = ["sqlalchemy (>=2.0.0)"]
-test = ["pytest"]
 
 [[package]]
 name = "packaging"
@@ -1003,29 +357,6 @@ dev = ["pre-commit", "tox"]
 testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
-name = "ply"
-version = "3.11"
-description = "Python Lex & Yacc"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "policy-sentry"
-version = "0.12.10"
-description = "Generate locked-down AWS IAM Policies"
-category = "dev"
-optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-beautifulsoup4 = "*"
-click = "*"
-PyYAML = "*"
-requests = "*"
-schema = "*"
-
-[[package]]
 name = "pre-commit"
 version = "3.6.2"
 description = "A framework for managing and maintaining multi-language pre-commit hooks."
@@ -1053,99 +384,12 @@ python-versions = ">=3.8"
 tomli = {version = ">=1.1.0", markers = "python_version < \"3.11\""}
 
 [[package]]
-name = "prettytable"
-version = "3.10.0"
-description = "A simple Python library for easily displaying tabular data in a visually appealing ASCII table format"
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.dependencies]
-wcwidth = "*"
-
-[package.extras]
-tests = ["pytest", "pytest-cov", "pytest-lazy-fixtures"]
-
-[[package]]
-name = "py-serializable"
-version = "1.0.2"
-description = "Library for serializing and deserializing Python Objects to and from JSON and XML."
-category = "dev"
-optional = false
-python-versions = ">=3.8,<4.0"
-
-[package.dependencies]
-defusedxml = ">=0.7.1,<0.8.0"
-
-[[package]]
-name = "pycares"
-version = "4.4.0"
-description = "Python interface for c-ares"
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.dependencies]
-cffi = ">=1.5.0"
-
-[package.extras]
-idna = ["idna (>=2.1)"]
-
-[[package]]
-name = "pycep-parser"
-version = "0.4.1"
-description = "A Python based Bicep parser"
-category = "dev"
-optional = false
-python-versions = ">=3.7,<4.0"
-
-[package.dependencies]
-lark = ">=1.1.2"
-regex = ">=2022.1.18"
-typing-extensions = ">=3.10.0"
-
-[[package]]
 name = "pycodestyle"
 version = "2.11.1"
 description = "Python style guide checker"
 category = "dev"
 optional = false
 python-versions = ">=3.8"
-
-[[package]]
-name = "pycparser"
-version = "2.21"
-description = "C parser in Python"
-category = "dev"
-optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[[package]]
-name = "pydantic"
-version = "2.6.3"
-description = "Data validation using Python type hints"
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.dependencies]
-annotated-types = ">=0.4.0"
-pydantic-core = "2.16.3"
-typing-extensions = ">=4.6.1"
-
-[package.extras]
-email = ["email-validator (>=2.0.0)"]
-
-[[package]]
-name = "pydantic-core"
-version = "2.16.3"
-description = ""
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.dependencies]
-typing-extensions = ">=4.6.0,<4.7.0 || >4.7.0"
 
 [[package]]
 name = "pydocstyle"
@@ -1182,36 +426,6 @@ plugins = ["importlib-metadata"]
 windows-terminal = ["colorama (>=0.4.6)"]
 
 [[package]]
-name = "pyparsing"
-version = "3.1.2"
-description = "pyparsing module - Classes and methods to define and execute parsing grammars"
-category = "dev"
-optional = false
-python-versions = ">=3.6.8"
-
-[package.extras]
-diagrams = ["railroad-diagrams", "jinja2"]
-
-[[package]]
-name = "pyston"
-version = "2.3.5"
-description = "A JIT for Python"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "pyston-autoload"
-version = "2.3.5"
-description = "Automatically loads and enables pyston"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-pyston = "2.3.5"
-
-[[package]]
 name = "pytest"
 version = "8.1.0"
 description = "pytest: simple powerful testing with Python"
@@ -1231,17 +445,6 @@ tomli = {version = ">=1", markers = "python_version < \"3.11\""}
 testing = ["argcomplete", "attrs (>=19.2)", "hypothesis (>=3.56)", "mock", "pygments (>=2.7.2)", "requests", "setuptools", "xmlschema"]
 
 [[package]]
-name = "python-dateutil"
-version = "2.9.0.post0"
-description = "Extensions to the standard Python datetime module"
-category = "dev"
-optional = false
-python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
-
-[package.dependencies]
-six = ">=1.5"
-
-[[package]]
 name = "pyupgrade"
 version = "3.15.1"
 description = "A tool to automatically upgrade syntax for newer versions."
@@ -1253,76 +456,12 @@ python-versions = ">=3.8.1"
 tokenize-rt = ">=5.2.0"
 
 [[package]]
-name = "pywin32"
-version = "306"
-description = "Python for Window Extensions"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
 name = "pyyaml"
 version = "6.0.1"
 description = "YAML parser and emitter for Python"
 category = "dev"
 optional = false
 python-versions = ">=3.6"
-
-[[package]]
-name = "rdflib"
-version = "7.0.0"
-description = "RDFLib is a Python library for working with RDF, a simple yet powerful language for representing information."
-category = "dev"
-optional = false
-python-versions = ">=3.8.1,<4.0.0"
-
-[package.dependencies]
-isodate = ">=0.6.0,<0.7.0"
-pyparsing = ">=2.1.0,<4"
-
-[package.extras]
-berkeleydb = ["berkeleydb (>=18.1.0,<19.0.0)"]
-networkx = ["networkx (>=2.0.0,<3.0.0)"]
-html = ["html5lib (>=1.0,<2.0)"]
-lxml = ["lxml (>=4.3.0,<5.0.0)"]
-
-[[package]]
-name = "referencing"
-version = "0.33.0"
-description = "JSON Referencing + Python"
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[package.dependencies]
-attrs = ">=22.2.0"
-rpds-py = ">=0.7.0"
-
-[[package]]
-name = "regex"
-version = "2023.12.25"
-description = "Alternative regular expression module, to replace re."
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[[package]]
-name = "requests"
-version = "2.31.0"
-description = "Python HTTP for Humans."
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.dependencies]
-certifi = ">=2017.4.17"
-charset-normalizer = ">=2,<4"
-idna = ">=2.5,<4"
-urllib3 = ">=1.21.1,<3"
-
-[package.extras]
-socks = ["PySocks (>=1.5.6,!=1.5.7)"]
-use_chardet_on_py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
 name = "rich"
@@ -1338,14 +477,6 @@ pygments = ">=2.13.0,<3.0.0"
 
 [package.extras]
 jupyter = ["ipywidgets (>=7.5.1,<9)"]
-
-[[package]]
-name = "rpds-py"
-version = "0.18.0"
-description = "Python bindings to Rust's persistent data structures (rpds)"
-category = "dev"
-optional = false
-python-versions = ">=3.8"
 
 [[package]]
 name = "ruamel.yaml"
@@ -1371,122 +502,12 @@ optional = false
 python-versions = ">=3.6"
 
 [[package]]
-name = "rustworkx"
-version = "0.13.2"
-description = "A python graph library implemented in Rust"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.dependencies]
-numpy = ">=1.16.0"
-
-[package.extras]
-all = ["matplotlib (>=3.0)", "pillow (>=5.4)"]
-graphviz = ["pillow (>=5.4)"]
-mpl = ["matplotlib (>=3.0)"]
-
-[[package]]
-name = "s3transfer"
-version = "0.10.0"
-description = "An Amazon S3 Transfer Manager"
-category = "dev"
-optional = false
-python-versions = ">= 3.8"
-
-[package.dependencies]
-botocore = ">=1.33.2,<2.0a.0"
-
-[package.extras]
-crt = ["botocore[crt] (>=1.33.2,<2.0a.0)"]
-
-[[package]]
-name = "schema"
-version = "0.7.5"
-description = "Simple data validation library"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-contextlib2 = ">=0.5.5"
-
-[[package]]
-name = "semantic-version"
-version = "2.10.0"
-description = "A library implementing the 'SemVer' scheme."
-category = "dev"
-optional = false
-python-versions = ">=2.7"
-
-[package.extras]
-dev = ["Django (>=1.11)", "nose2", "tox", "check-manifest", "coverage", "flake8", "wheel", "zest.releaser", "readme-renderer (<25.0)", "colorama (<=0.4.1)"]
-doc = ["sphinx", "sphinx-rtd-theme"]
-
-[[package]]
-name = "six"
-version = "1.16.0"
-description = "Python 2 and 3 compatibility utilities"
-category = "dev"
-optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
-
-[[package]]
-name = "smmap"
-version = "5.0.1"
-description = "A pure Python implementation of a sliding window memory map manager"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[[package]]
 name = "snowballstemmer"
 version = "2.2.0"
 description = "This package provides 29 stemmers for 28 languages generated from Snowball algorithms."
 category = "dev"
 optional = false
 python-versions = "*"
-
-[[package]]
-name = "sortedcontainers"
-version = "2.4.0"
-description = "Sorted Containers -- Sorted List, Sorted Dict, Sorted Set"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "soupsieve"
-version = "2.5"
-description = "A modern CSS selector implementation for Beautiful Soup."
-category = "dev"
-optional = false
-python-versions = ">=3.8"
-
-[[package]]
-name = "spdx-tools"
-version = "0.8.2"
-description = "SPDX parser and tools."
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.dependencies]
-beartype = "*"
-click = "*"
-license-expression = "*"
-ply = "*"
-pyyaml = "*"
-rdflib = "*"
-semantic-version = "*"
-uritools = "*"
-xmltodict = "*"
-
-[package.extras]
-code_style = ["isort", "black", "flake8"]
-development = ["black", "flake8", "isort", "networkx", "pytest"]
-graph_generation = ["pygraphviz", "networkx"]
-test = ["pytest", "pyshacl", "tzdata"]
 
 [[package]]
 name = "stevedore"
@@ -1498,28 +519,6 @@ python-versions = ">=3.8"
 
 [package.dependencies]
 pbr = ">=2.0.0,<2.1.0 || >2.1.0"
-
-[[package]]
-name = "tabulate"
-version = "0.9.0"
-description = "Pretty-print tabular data"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.extras]
-widechars = ["wcwidth"]
-
-[[package]]
-name = "termcolor"
-version = "2.3.0"
-description = "ANSI color formatting for output in terminal"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.extras]
-tests = ["pytest", "pytest-cov"]
 
 [[package]]
 name = "tokenize-rt"
@@ -1536,23 +535,6 @@ description = "A lil' TOML parser"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
-
-[[package]]
-name = "tqdm"
-version = "4.66.2"
-description = "Fast, Extensible Progress Meter"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.dependencies]
-colorama = {version = "*", markers = "platform_system == \"Windows\""}
-
-[package.extras]
-dev = ["pytest (>=6)", "pytest-cov", "pytest-timeout", "pytest-xdist"]
-notebook = ["ipywidgets (>=6)"]
-slack = ["slack-sdk"]
-telegram = ["requests"]
 
 [[package]]
 name = "typeguard"
@@ -1579,49 +561,6 @@ optional = false
 python-versions = ">=3.8"
 
 [[package]]
-name = "unidiff"
-version = "0.7.5"
-description = "Unified diff parsing/metadata extraction library."
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "uritools"
-version = "4.0.2"
-description = "URI parsing, classification and composition"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[[package]]
-name = "urllib3"
-version = "1.26.18"
-description = "HTTP library with thread-safe connection pooling, file post, and more."
-category = "dev"
-optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
-
-[package.extras]
-brotli = ["brotlicffi (>=0.8.0)", "brotli (==1.0.9)", "brotlipy (>=0.6.0)", "brotli (>=1.0.9)"]
-secure = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "certifi", "urllib3-secure-extra", "ipaddress"]
-socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
-
-[[package]]
-name = "urllib3"
-version = "2.0.7"
-description = "HTTP library with thread-safe connection pooling, file post, and more."
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.extras]
-brotli = ["brotli (>=1.0.9)", "brotlicffi (>=0.8.0)"]
-secure = ["certifi", "cryptography (>=1.9)", "idna (>=2.0.0)", "pyopenssl (>=17.1.0)", "urllib3-secure-extra"]
-socks = ["pysocks (>=1.5.6,!=1.5.7,<2.0)"]
-zstd = ["zstandard (>=0.18.0)"]
-
-[[package]]
 name = "virtualenv"
 version = "20.25.1"
 description = "Virtual Python Environment builder"
@@ -1639,34 +578,6 @@ docs = ["furo (>=2023.7.26)", "proselint (>=0.13)", "sphinx-argparse (>=0.4)", "
 test = ["covdefaults (>=2.3)", "coverage-enable-subprocess (>=1)", "coverage (>=7.2.7)", "flaky (>=3.7)", "packaging (>=23.1)", "pytest-env (>=0.8.2)", "pytest-freezer (>=0.4.8)", "pytest-mock (>=3.11.1)", "pytest-randomly (>=3.12)", "pytest-timeout (>=2.1)", "pytest (>=7.4)", "setuptools (>=68)", "time-machine (>=2.10)"]
 
 [[package]]
-name = "wcwidth"
-version = "0.2.13"
-description = "Measures the displayed width of unicode strings in a terminal"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "xmltodict"
-version = "0.13.0"
-description = "Makes working with XML feel like you are working with JSON"
-category = "dev"
-optional = false
-python-versions = ">=3.4"
-
-[[package]]
-name = "yarl"
-version = "1.9.4"
-description = "Yet another URL library"
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.dependencies]
-idna = ">=2.0"
-multidict = ">=4.0"
-
-[[package]]
 name = "zipp"
 version = "3.17.0"
 description = "Backport of pathlib-compatible object wrapper for zip files"
@@ -1681,143 +592,56 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-ena
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "675d3bdb1759b18046c57ac294dc0bbab259f8085437341507a376ff1e900791"
+content-hash = "8e6683d19b33d73c9dabd523875d3a50a788aabe37babb6eabfc9bee4a450827"
 
 [metadata.files]
-aiodns = []
-aiohttp = []
-aiomultiprocess = []
-aiosignal = []
-annotated-types = []
-argcomplete = []
-async-timeout = []
 attrs = []
 bandit = []
-bc-detect-secrets = []
-bc-jsonpath-ng = []
-bc-python-hcl2 = []
-beartype = []
-beautifulsoup4 = []
 black = []
-"boolean.py" = []
-boto3 = []
-botocore = []
-cached-property = []
-cachetools = []
-certifi = []
-cffi = []
 cfgv = []
-charset-normalizer = []
-checkov = []
 click = []
-click-option-group = []
-cloudsplaining = []
 colorama = []
-configargparse = []
-contextlib2 = []
 coverage = []
-cyclonedx-python-lib = []
 darglint = []
-decorator = []
-defusedxml = []
 distlib = []
-docker = []
-dockerfile-parse = []
-dpath = []
 exceptiongroup = []
 filelock = []
 flake8 = []
 flake8-bugbear = []
 flake8-docstrings = []
-frozenlist = []
-gitdb = []
-gitpython = []
 identify = []
-idna = []
 importlib-metadata = []
 iniconfig = []
-isodate = []
 isort = []
-jinja2 = []
-jmespath = []
-jsonschema = []
-jsonschema-specifications = []
-junit-xml = []
-lark = []
-license-expression = []
-markdown = []
 markdown-it-py = []
-markupsafe = []
 mccabe = []
 mdurl = []
-multidict = []
 mypy = []
 mypy-extensions = []
-networkx = []
 nodeenv = []
-numpy = []
-openai = []
-packageurl-python = []
 packaging = []
 pathspec = []
 pbr = []
 pep8-naming = []
 platformdirs = []
 pluggy = []
-ply = []
-policy-sentry = []
 pre-commit = []
 pre-commit-hooks = []
-prettytable = []
-py-serializable = []
-pycares = []
-pycep-parser = []
 pycodestyle = []
-pycparser = []
-pydantic = []
-pydantic-core = []
 pydocstyle = []
 pyflakes = []
 pygments = []
-pyparsing = []
-pyston = []
-pyston-autoload = []
 pytest = []
-python-dateutil = []
 pyupgrade = []
-pywin32 = []
 pyyaml = []
-rdflib = []
-referencing = []
-regex = []
-requests = []
 rich = []
-rpds-py = []
 "ruamel.yaml" = []
 "ruamel.yaml.clib" = []
-rustworkx = []
-s3transfer = []
-schema = []
-semantic-version = []
-six = []
-smmap = []
 snowballstemmer = []
-sortedcontainers = []
-soupsieve = []
-spdx-tools = []
 stevedore = []
-tabulate = []
-termcolor = []
 tokenize-rt = []
 tomli = []
-tqdm = []
 typeguard = []
 typing-extensions = []
-unidiff = []
-uritools = []
-urllib3 = []
 virtualenv = []
-wcwidth = []
-xmltodict = []
-yarl = []
 zipp = []
