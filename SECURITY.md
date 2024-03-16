@@ -16,5 +16,5 @@ Report security bugs in third-party modules to the person or team maintaining th
 For context on Ologist's security notification process, please see the [Notifications] section of our publicly available
 security policies.
 
-[report a vulnerability]: https://github.com/ologistio/ologist-cli/security/advisories/new
+[report a vulnerability]: https://github.com/ologistio/magi/security/advisories/new
 [notifications]: https://github.com/ologist/meta/blob/main/security/membership-and-notifications.md#notifications

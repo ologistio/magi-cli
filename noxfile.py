@@ -22,7 +22,7 @@ except ImportError:
     raise SystemExit(dedent(message)) from None
 
 
-package = "ologist_cli"
+package = "magi_cli"
 python_versions = ["3.12", "3.11", "3.10", "3.9"]
 nox.needs_version = ">= 2024.3.2"
 nox.options.sessions = (

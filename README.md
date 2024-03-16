@@ -1,20 +1,20 @@
-# Ologist CLI
+# Magi
 
-[![PyPI](https://img.shields.io/pypi/v/ologist-cli.svg)][pypi status]
-[![Status](https://img.shields.io/pypi/status/ologist-cli.svg)][pypi status]
-[![Python Version](https://img.shields.io/pypi/pyversions/ologist-cli)][pypi status]
-[![License](https://img.shields.io/pypi/l/ologist-cli)][license]
+[![PyPI](https://img.shields.io/pypi/v/magi.svg)][pypi status]
+[![Status](https://img.shields.io/pypi/status/magi.svg)][pypi status]
+[![Python Version](https://img.shields.io/pypi/pyversions/magi)][pypi status]
+[![License](https://img.shields.io/pypi/l/magi)][license]
 
-[![Tests](https://github.com/ologistio/ologist-cli/workflows/Tests/badge.svg)][tests]
-[![Codecov](https://codecov.io/gh/ologistio/ologist-cli/branch/main/graph/badge.svg)][codecov]
+[![Tests](https://github.com/ologistio/magi/workflows/Tests/badge.svg)][tests]
+[![Codecov](https://codecov.io/gh/ologistio/magi/branch/main/graph/badge.svg)][codecov]
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
 [![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)][code of conduct]
 
-[pypi status]: https://pypi.org/project/ologist-cli/
-[tests]: https://github.com/ologistio/ologist-cli/actions?workflow=Tests
-[codecov]: https://app.codecov.io/gh/ologistio/ologist-cli
+[pypi status]: https://pypi.org/project/magi/
+[tests]: https://github.com/ologistio/magi/actions?workflow=Tests
+[codecov]: https://app.codecov.io/gh/ologistio/magi
 [pre-commit]: https://github.com/pre-commit/pre-commit
 [black]: https://github.com/psf/black
 
@@ -28,10 +28,10 @@
 
 ## Installation
 
-You can install _Ologist CLI_ via [pip] from [PyPI]:
+You can install _Magi CLI_ via [pip] from [PyPI]:
 
 ```console
-$ pip install ologist-cli
+$ pip install magi-cli
 ```
 
 ## Usage
@@ -46,7 +46,7 @@ To learn more, see the [Contributor Guide].
 ## License
 
 Distributed under the terms of the [MIT license][license],
-_Ologist CLI_ is free and open source software.
+_Magi CLI_ is free and open source software.
 
 ## Issues
 
@@ -60,12 +60,12 @@ This project was generated from [@cjolowicz]'s [Hypermodern Python Cookiecutter]
 [@cjolowicz]: https://github.com/cjolowicz
 [pypi]: https://pypi.org/
 [hypermodern python cookiecutter]: https://github.com/cjolowicz/cookiecutter-hypermodern-python
-[file an issue]: https://github.com/ologistio/ologist-cli/issues
+[file an issue]: https://github.com/ologistio/magi/issues
 [pip]: https://pip.pypa.io/
 
 <!-- github-only -->
 
-[license]: https://github.com/ologistio/ologist-cli/blob/main/LICENSE
-[code of conduct]: https://github.com/ologistio/ologist-cli/blob/main/CODE_OF_CONDUCT.md
-[contributor guide]: https://github.com/ologistio/ologist-cli/blob/main/CONTRIBUTING.md
-[command-line reference]: https://github.com/ologistio/ologist-cli/blob/main/USAGE.md
+[license]: https://github.com/ologistio/magi/blob/main/LICENSE
+[code of conduct]: https://github.com/ologistio/magi/blob/main/CODE_OF_CONDUCT.md
+[contributor guide]: https://github.com/ologistio/magi/blob/main/CONTRIBUTING.md
+[command-line reference]: https://github.com/ologistio/magi/blob/main/USAGE.md

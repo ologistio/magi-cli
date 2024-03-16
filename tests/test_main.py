@@ -1,8 +1,7 @@
 """Test cases for the __main__ module."""
 
 from click.testing import CliRunner
-
-from ologist_cli import __main__
+from magi_cli import __main__
 
 
 def test_main_succeeds(runner: CliRunner) -> None:

@@ -12,9 +12,9 @@ Here is a list of important resources for contributors:
 - [Code of Conduct]
 
 [mit license]: https://opensource.org/license/mit/
-[source code]: https://github.com/ologistio/ologist-cli
-[documentation]: https://ologist-cli.readthedocs.io/
-[issue tracker]: https://github.com/ologistio/ologist-cli/issues
+[source code]: https://github.com/ologistio/magi
+[documentation]: https://docs.magi.sh
+[issue tracker]: https://github.com/ologistio/magi/issues
 
 ## How to report a bug
 
@@ -54,7 +54,7 @@ or the command-line interface:
 
 ```console
 $ poetry run python
-$ poetry run ologist-cli
+$ poetry run magi
 ```
 
 [poetry]: https://python-poetry.org/
@@ -108,7 +108,7 @@ $ nox --session=pre-commit -- install
 It is recommended to open an issue before starting work on anything.
 This will allow a chance to talk it over with the owners and validate your approach.
 
-[pull request]: https://github.com/ologistio/ologist-cli/pulls
+[pull request]: https://github.com/ologistio/magi/pulls
 
 <!-- github-only -->
 

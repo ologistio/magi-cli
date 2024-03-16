@@ -1,18 +1,18 @@
 [tool.poetry]
-name = "ologist-cli"
+name = "magi-cli"
 version = "0.1.0"
-description = "Ologist CLI"
+description = "Magi CLI"
 authors = ["Josh Finch <josh@ologist.io>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/ologistio/ologist-cli"
-repository = "https://github.com/ologistio/ologist-cli"
+homepage = "https://github.com/ologistio/magi"
+repository = "https://github.com/ologistio/magi"
 classifiers = [
     "Development Status :: 1 - Planning",
 ]
 
 [tool.poetry.urls]
-Changelog = "https://github.com/ologistio/ologist-cli/releases"
+Changelog = "https://github.com/ologistio/magi/releases"
 
 [tool.poetry.dependencies]
 python = "^3.9"
