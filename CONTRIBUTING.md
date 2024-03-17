@@ -113,7 +113,7 @@ nox --session=pre-commit -- install
 ```
 
 It is recommended to open an issue before starting work on anything.
-This will allow a chance to talk it over with the owners and validate your approach.
+This will allow a chance to talk it over with the maintainers and validate your approach.
 
 [pull request]: https://github.com/ologistio/magi/pulls
 

@@ -62,6 +62,7 @@ This project was generated from [@cjolowicz]'s [Hypermodern Python Cookiecutter]
 [codecov]: https://app.codecov.io/gh/ologistio/magi
 [pre-commit]: https://github.com/pre-commit/pre-commit
 [black]: https://github.com/psf/black
+
 <!-- github-only -->
 
 [license]: https://github.com/ologistio/magi/blob/main/LICENSE
