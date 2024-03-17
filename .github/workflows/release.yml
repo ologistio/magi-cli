@@ -31,7 +31,7 @@ jobs:
         run: |
           pipx install poetry poetry-plugin-export
           poetry config warnings.export false
-          poetry export --without-hashes --only=system --format=requirements.txt > constraints.txt
+          poetry export --without-hashes --format=requirements.txt > constraints.txt
           poetry --version
 
       - name: Check if there is a parent commit
