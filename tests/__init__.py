@@ -1,1 +1,1 @@
-"""Test suite for the ologist_cli package."""
+"""Test suite for the magi__cli package."""

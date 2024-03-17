@@ -1,0 +1,6 @@
+{
+  "packages": ["python@3.12", "poetry", "python312Packages.pip@latest"],
+  "shell": {
+    "init_hook": ["poetry install --only=system", "poetry shell"]
+  }
+}

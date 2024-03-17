@@ -1,18 +1,18 @@
 [tool.poetry]
-name = "ologist-cli"
+name = "magi-cli"
 version = "0.1.0"
-description = "Ologist CLI"
+description = "Magi CLI"
 authors = ["Josh Finch <josh@ologist.io>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/ologistio/ologist-cli"
-repository = "https://github.com/ologistio/ologist-cli"
+homepage = "https://github.com/ologistio/magi"
+repository = "https://github.com/ologistio/magi"
 classifiers = [
     "Development Status :: 1 - Planning",
 ]
 
 [tool.poetry.urls]
-Changelog = "https://github.com/ologistio/ologist-cli/releases"
+Changelog = "https://github.com/ologistio/magi/releases"
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -38,7 +38,15 @@ pyupgrade = "^3.15.1"
 typeguard = "^4.1.5"
 
 [tool.poetry.scripts]
-ologist = "ologist_cli.__main__:main"
+magi = "magi_cli.__main__:main"
+
+[tool.poetry.group.system.dependencies]
+nox = "^2024.3.2"
+nox-poetry = "^1.0.3"
+pip = "^24.0"
+virtualenv = "^20.25.1"
+poetry-plugin-export = "^1.7.0"
+pre-commit = "^3.6.2"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
@@ -46,10 +54,11 @@ tests = ["tests", "*/tests"]
 
 [tool.coverage.run]
 branch = true
-source = ["ologist_cli"]
+source = ["magi_cli"]
 
 [tool.coverage.report]
 show_missing = true
+ignore_errors = true
 fail_under = 100
 exclude_also = [
     "def __repr__",
