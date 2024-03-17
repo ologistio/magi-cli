@@ -70,7 +70,7 @@ jobs:
         if: matrix.os == 'windows-latest'
         run: . "$(poetry env info --path)/Scripts/activate"
 
-      - name: Activate virtual environment (Good Operating Systems)
+      - name: Activate virtual environment (Linux/MacOS)
         if: matrix.os != 'windows-latest'
         run: source $(poetry env info --path)/bin/activate
 
@@ -103,7 +103,6 @@ jobs:
 
       - name: Run Nox
         run: |
-          source $(poetry env info --path)/bin/activate
           nox --python=${{ matrix.python }}
 
       - name: Upload coverage data
