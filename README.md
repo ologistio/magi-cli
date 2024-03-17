@@ -16,10 +16,6 @@
 
 </p>
 
-## Description
-
-TODO
-
 ## Installing
 
 You can install _Magi CLI_ via [pip] from [PyPI]:
