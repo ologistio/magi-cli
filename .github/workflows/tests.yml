@@ -95,8 +95,7 @@ jobs:
 
       - name: Run Nox
         run: |
-          [ ${{ matrix.os }} != "windows-latest" ] && source venv/bin/activate || [ ${{ matrix.os }} == "windows-latest" ] && .\venv\Scripts\activate
-          nox --python=${{ matrix.python }}
+          poetry run nox --python=${{ matrix.python }}
 
       - name: Upload coverage data
         if: always() && matrix.session == 'tests'
