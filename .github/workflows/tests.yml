@@ -44,7 +44,7 @@ jobs:
 
       - name: Upgrade pip
         run: |
-          pip install --upgrade pip
+          pip installpip
           pip --version
 
       - name: Upgrade pip in virtual environments
@@ -58,13 +58,16 @@ jobs:
 
       - name: Install Poetry
         run: |
-          pipx install poetry
+          pipx install poetry poetry-plugin-export
           poetry config warnings.export false
+          poetry export --format=requirements.txt > /tmp/constraints.txt
           poetry --version
 
-      - name: Set up system packages from Poetry
+      - name: Install Nox
         run: |
-          poetry install --only=system
+          pipx install --pip-args=--constraint=/tmp/constraints.txt nox
+          pipx inject --pip-args=--constraint=/tmp/constraints.txt nox nox-poetry
+          nox --version
 
       - name: Compute pre-commit cache key
         if: matrix.session == 'pre-commit'
@@ -95,13 +98,13 @@ jobs:
 
       - name: Run Nox
         run: |
-          poetry run nox --python=${{ matrix.python }}
+          nox --python=${{ matrix.python }}
 
       - name: Upload coverage data
-        if: matrix.session == 'tests' && matrix.os == 'ubuntu-latest'
+        if: always() && matrix.session == 'tests'
         uses: "actions/upload-artifact@v4"
         with:
-          name: coverage-data-${{ matrix.python }}
+          name: coverage-data-${{ matrix.os }}-${{ matrix.python }}
           path: ".coverage.*"
 
   coverage:
@@ -118,14 +121,19 @@ jobs:
 
       - name: Upgrade pip
         run: |
-          pip install --upgrade pip
+          pip install --constraint=.github/workflows/constraints.txt pip
           pip --version
 
       - name: Install Poetry
         run: |
-          pipx install poetry
-          poetry config warnings.export false
+          pipx install --pip-args=--constraint=.github/workflows/constraints.txt poetry
           poetry --version
+
+      - name: Install Nox
+        run: |
+          pipx install --pip-args=--constraint=.github/workflows/constraints.txt nox
+          pipx inject --pip-args=--constraint=.github/workflows/constraints.txt nox nox-poetry
+          nox --version
 
       - name: Download coverage data
         uses: actions/download-artifact@v4
@@ -133,20 +141,16 @@ jobs:
           pattern: coverage-data-*
           merge-multiple: true
 
-      - name: Set up system packages from Poetry
-        run: |
-          poetry install --only=system
-
       - name: Combine coverage data and display human readable report
         run: |
-          poetry run nox --session=coverage
+          nox --session=coverage
 
       - name: Create coverage report
         run: |
-          poetry run nox --session=coverage -- xml
+          nox --session=coverage -- xml
 
       - name: Upload coverage report
         uses: codecov/codecov-action@v4.1.0
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: ologistio/magi
+          slug: ologistio/ologist-cli
