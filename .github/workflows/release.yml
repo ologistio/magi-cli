@@ -29,13 +29,10 @@ jobs:
 
       - name: Install Poetry
         run: |
-          pip install poetry
+          pipx install poetry poetry-plugin-export
+          poetry config warnings.export false
+          poetry export --format=requirements.txt > /tmp/constraints.txt
           poetry --version
-
-      - name: Set up system packages from Poetry
-        run: |
-          poetry install --only=system
-          source $(poetry env info --path)/bin/activate
 
       - name: Check if there is a parent commit
         id: check-parent-commit
