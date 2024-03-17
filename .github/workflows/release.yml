@@ -32,6 +32,11 @@ jobs:
           pip install poetry
           poetry --version
 
+      - name: Set up system packages from Poetry
+        run: |
+          poetry install --only=system
+          source $(poetry env info --path)/bin/activate
+
       - name: Check if there is a parent commit
         id: check-parent-commit
         run: |
