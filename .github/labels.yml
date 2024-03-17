@@ -64,3 +64,12 @@
 - name: wontfix
   description: This will not be worked on
   color: ffffff
+- name: major
+  description: Bumps package version
+  color: 018558
+- name: minor
+  description: Bumps package version
+  color: bde902
+- name: patch
+  description: Bumps package version
+  color: fef031
