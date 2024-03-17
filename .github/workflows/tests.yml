@@ -134,6 +134,7 @@ jobs:
 
       - name: Install Nox
         run: |
+          cat constraints.txt
           pipx install --pip-args=--constraint=constraints.txt nox
           pipx inject --pip-args=--constraint=constraints.txt nox nox-poetry
           nox --version
