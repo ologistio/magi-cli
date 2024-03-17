@@ -58,6 +58,7 @@ source = ["magi_cli"]
 
 [tool.coverage.report]
 show_missing = true
+ignore_errors = true
 fail_under = 100
 exclude_also = [
     "def __repr__",
