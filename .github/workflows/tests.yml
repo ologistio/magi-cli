@@ -91,8 +91,7 @@ jobs:
 
       - name: Run Nox
         run: |
-          poetry shell
-          nox --python=${{ matrix.python }}
+          poetry run nox --python=${{ matrix.python }}
 
       - name: Upload coverage data
         if: always() && matrix.session == 'tests'
@@ -131,13 +130,11 @@ jobs:
 
       - name: Combine coverage data and display human readable report
         run: |
-          poetry shell
-          nox --session=coverage
+          poetry run nox --session=coverage
 
       - name: Create coverage report
         run: |
-          poetry shell
-          nox --session=coverage -- xml
+          poetry run nox --session=coverage -- xml
 
       - name: Upload coverage report
         uses: codecov/codecov-action@v4.1.0
