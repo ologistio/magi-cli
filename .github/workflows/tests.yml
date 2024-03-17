@@ -95,7 +95,7 @@ jobs:
 
       - name: Run Nox
         run: |
-          . "$(poetry env info --path)/bin/activate"
+          [ ${{ matrix.os }} != "windows-latest" ] && source venv/bin/activate || [ ${{ matrix.os }} == "windows-latest" ] && .\venv\Scripts\activate
           nox --python=${{ matrix.python }}
 
       - name: Upload coverage data
