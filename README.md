@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://magi.sh/" target="blank"><img src="https://magi.sh/img/logo-small.svg" width="120" alt="Magi Logo" /></a>
+  <a href="http://magi.sh/" target="blank"><img src="https://magi.sh/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmagi-logo.f821dff3.png&w=256&q=75" width="256" alt="Magi Logo" /></a>
 </p>
 <p align="center">A batteries-included, cloud-agnostic framework for infrastructure-as-code, using the tools you already love.</p>
 <p align="center">
