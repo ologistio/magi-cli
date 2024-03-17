@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "python@3.11",
+    "poetry",
+    "python311Packages.pip"
+  ],
+  "shell": {
+    "init_hook":["poetry shell"]
+  }
+}

@@ -38,15 +38,23 @@ pyupgrade = "^3.15.1"
 typeguard = "^4.1.5"
 
 [tool.poetry.scripts]
-ologist = "ologist_cli.__main__:main"
+magi = "magi_cli.__main__:main"
+
+[tool.poetry.group.system.dependencies]
+nox = "^2024.3.2"
+nox-poetry = "^1.0.3"
+pip = "^24.0"
+virtualenv = "^20.25.1"
+poetry-plugin-export = "^1.7.0"
+pre-commit = "^3.6.2"
 
 [tool.coverage.paths]
-source = ["src", "*/site-packages"]
-tests = ["tests", "*/tests"]
+source = ["src"]
+tests = ["tests"]
 
 [tool.coverage.run]
 branch = true
-source = ["ologist_cli"]
+source = ["magi_cli"]
 
 [tool.coverage.report]
 show_missing = true

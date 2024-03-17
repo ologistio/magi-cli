@@ -8,8 +8,11 @@
 /docs/_build/
 /src/*.egg-info/
 __pycache__/
-.idea/
-.vscode/
-result/**
-.envrc
-.direnv/**
+/.idea/
+/.vscode/
+/result/**
+/.envrc
+/.direnv/**
+/.venv/
+/.pytest_cache
+.devbox
