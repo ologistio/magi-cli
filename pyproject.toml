@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "magi-cli"
-version = "0.1.0"
+version = "0.1.1.dev.1710641740"
 description = "Magi CLI"
 authors = ["Josh Finch <josh@ologist.io>"]
 license = "MIT"
