@@ -55,7 +55,7 @@ and start a project shell with:
 poetry shell
 ```
 
-[Devbox]: https://www.jetpack.io/devbox/docs/installing_devbox/
+[devbox]: https://www.jetpack.io/devbox/docs/installing_devbox/
 
 ## How to run the project
 

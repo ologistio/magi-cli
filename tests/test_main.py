@@ -1,6 +1,7 @@
 """Test cases for the __main__ module."""
 
 from click.testing import CliRunner
+
 from magi_cli import __main__
 
 
