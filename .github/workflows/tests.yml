@@ -65,7 +65,14 @@ jobs:
       - name: Set up system packages from Poetry
         run: |
           poetry install --only=system
-          source $(poetry env info --path)/bin/activate
+
+      - name: Activate virtual environment (Windows)
+        if: matrix.os == 'windows'
+        run: . "$(poetry env info --path)/Scripts/activate"
+
+      - name: Activate virtual environment (Good Operating Systems)
+        if: matrix.os != 'windows'
+        run: source $(poetry env info --path)/bin/activate
 
       - name: Compute pre-commit cache key
         if: matrix.session == 'pre-commit'
